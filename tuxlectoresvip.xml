@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">	
+	<name>PLG_CONTENT_LECTORESVIP</name>
+	<author>Tux Merlín Software</author>
+	<creationDate>Dic 2011</creationDate>
+	<copyright>C) 2011 Miguel Tuyaré. All rights reserved.</copyright>
+	<license>GNU/GPL v3</license>
+	<authorEmail>developer@tuxmerlin.com.ar</authorEmail>
+	<authorUrl>www.tuxmerlin.com.ar</authorUrl>
+	<version>1.0</version>
+	<description>PLG_CONTENT_LECTORESVIP_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="tuxlectoresvip">tuxlectoresvip.php</filename>				
+		<folder>languages</folder>
+		<filename>index.html</filename>		
+		<filename>license.php</filename>		
+	</files> 	
+	<languages folder="languages">		
+		<language tag="es-ES">es-ES/es-ES.plg_content_tuxlectoresvip.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_content_tuxlectoresvip.sys.ini</language>		
+		<language tag="en-GB">en-GB/en-GB.plg_content_tuxlectoresvip.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_tuxlectoresvip.sys.ini</language>		
+	</languages>
+	<config>
+		<fields name="params">		
+			<fieldset name="basic">									
+				<field name="shn" type="radio" default="0" label="SHOWNAME" description="SHOWNAME_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>					
+				</field>				
+			</fieldset>				
+		</fields>		
+	</config>			
+</extension>
